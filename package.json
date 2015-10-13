@@ -1,0 +1,45 @@
+{
+  "name": "codog-cn",
+  "description": "Codog Bog theme for Ghost",
+  "homepage": "blog.codog.cn",
+  "version": "1.0.0",
+  "authors": [
+    "coding <coding@codog.cn>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cncodog/CDCasper"
+  },
+  "bugs": {
+    "url": "https://github.com/cncodog/CDCasper/issues"
+  },
+  "keywords": [
+    "ghost",
+    "theme",
+    "codog",
+    "docker",
+    "a simple dog"
+  ],
+  "devDependencies": {
+    "browser-sync": "*",
+    "coffee-script": "*",
+    "gulp": "*",
+    "gulp-add-src": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-changed": "*",
+    "gulp-coffee": "*",
+    "gulp-concat": "*",
+    "gulp-cssmin": "*",
+    "gulp-header": "*",
+    "gulp-minify-css": "*",
+    "gulp-sass": "*",
+    "gulp-strip-css-comments": "*",
+    "gulp-uglify": "*",
+    "gulp-util": "*",
+    "underscore.string": "*"
+  },
+  "engines": {
+    "node": "~0.12.x"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,63 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+{{! The big featured header }}
+
+<!-- start header -->
+
+
+
+<section class="content-wrap">
+    <div class="container">
+        <div class="row">
+            <main class="col-md-8 main-content">
+            {{! The tag below includes the post loop - partials/loop.hbs }}
+            {{> "loop"}}
+            </main>
+
+            <aside class="col-md-4 sidebar">
+                <!-- start widget -->
+                <!-- end widget -->
+                <!-- start tag cloud widget -->
+                {{> community}}
+                <!-- end tag cloud widget -->
+
+                <!-- start widget
+                 {{> download}}
+                <!-- end widget -->
+
+                <!-- start tag cloud widget -->
+                {{> tagcloudlist}}
+                <!-- end tag cloud widget -->
+
+                <!-- start widget -->
+                <!-- end widget -->
+
+                <!-- start widget -->
+                <!-- end widget -->                </aside>
+
+        </div>
+    </div>
+</section>
+<footer class="main-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+            {{> recentpost}}
+            </div>
+            <div class="col-sm-4">
+                {{> tagcloudlist}}
+            </div>
+
+            <div class="col-sm-4">
+                {{> friendlinks}}
+                </div>
+
+        </div>
+        </div>
+    </div>
+</footer>
+
+
+
+{{! The main content area on the homepage }}

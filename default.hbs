@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    {{! Document Settings }}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+    <meta name="keywords" content="Docker 开源容器管理 服务能力 codog">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/8.5/styles/monokai_sublime.min.css">
+    <link href="//cdn.bootcss.com/magnific-popup.js/1.0.0/magnific-popup.min.css" rel="stylesheet">
+    {{! Styles'n'Scripts }}
+    <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
+    <script>
+        /*====================================================
+          THEME SETTINGS & GLOBAL VARIABLES
+        ====================================================*/
+
+        //  1. Sidebar Position
+        var sidebar_left = false; // Set true or flase for positioning sidebar on left
+        //  2. Recent Post count
+        var recent_post_count = 3;
+
+    </script>
+<!--
+    <link rel="canonical" href="http://www.ghostchina.com/" />
+    <meta name="referrer" content="origin" />
+    <link rel="next" href="http://www.ghostchina.com/page/2/" />
+    <meta name="generator" content="Ghost 0.7" />
+    <link rel="alternate" type="application/rss+xml" title="Ghost 开源博客平台" href="http://www.ghostchina.com/rss/" />
+-->
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+</head>
+
+{{> header}}
+{{navigation}}
+
+<body class="{{body_class}} ">
+
+
+<!-- end navigation -->
+
+    <div class="site-wrapper">
+        {{! Everything else gets inserted here }}
+        {{{body}}}
+        {{> copyright}}
+
+    </div>
+<a href="#" id="back-to-top"><i class="fa fa-angle-up"></i></a>
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
+
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/fitvids/1.1.0/jquery.fitvids.min.js"></script>
+    {{! The main JavaScript file for Casper }}
+
+    <script src="{{asset "js/index.js"}}"></script>
+        <script>
+            $(function(){
+              $('.post-content img').each(function(item){
+                 var src = $(this).attr('src');
+              $(this).wrap('<a href="' + src + '" class="mfp-zoom" style="display:block;"></a>');
+              });
+
+        /*$('.post-content').magnificPopup({
+          delegate: 'a',
+          type: 'image'
+        });*/
+            });
+    </script>
+
+    <script>
+         window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+    </script>
+
+    <script>
+         $(function(){
+            var version = '0.6.3';
+            var $download =  $('.download > a').first();
+            var html = $download.html().replace(/\d\.\d\.\d/, version);
+
+            $download.html(html);
+          });
+    </script>
+    <script type="text/javascript">
+     var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+     document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F6338835ad35c6d950a554fdedb598e48' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+</body>
+</html>

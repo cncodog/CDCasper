@@ -1,0 +1,37 @@
+
+{{! This is the post loop - each post will be output using this markup }}
+{{#foreach posts}}
+
+
+
+<article  class="{{post_class}}">
+
+    <div class="post-head">
+        <h1 class="post-title"><a href="{{url}}">{{title}}</h1>
+        <div class="post-meta">
+            <span class="author">作者：{{author}}  </span> &bull;
+             <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="YYYY年MM月DD日"}}</time>
+        </div>
+    </div>
+    <div class="post-content">
+        <p>{{excerpt characters="140"}} &raquo;</p>
+        </div>
+    <div class="post-permalink">
+        <a href="{{url}}" class="btn btn-default">阅读全文</a>
+    </div>
+
+    <footer class="post-footer clearfix">
+        <div class="pull-left tag-list">
+            <i class="fa fa-folder-open-o"></i>
+            {{tags prefix=" 标签："}}
+        </div>
+        <div class="pull-right share">
+        </div>
+    </footer>
+</article>
+
+
+{{/foreach}}
+
+{{! Previous/next page links - displayed on every page }}
+{{pagination}}

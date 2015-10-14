@@ -1,0 +1,96 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+{{! The big featured header }}
+
+<!-- start header -->
+
+
+
+{{#post}}
+
+
+
+    <article class="{{post_class}} tag-about-ghost tag-release tag-ghost-0-7-ban-ben">
+
+        <header class="post-header">
+            <h1 class="post-title">{{title}}</h1>
+            <section class="post-meta">
+                <span class="author">作者：{{author}}  </span> &bull;
+                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="YYYY年MM月DD日"}}</time>
+           </section>
+        </header>
+
+        <section class="post-content">
+            {{content}}
+        </section>
+
+        <footer class="post-footer clearfix">
+            <div class="pull-left tag-list">
+                <i class="fa fa-folder-open-o"></i>
+                {{tags prefix=" 标签："}}
+            </div>
+
+            <div class="pull-right share">
+                <div class="bdsharebuttonbox share-icons">
+                    <a href="#" class="bds_more" data-cmd="more"></a>
+                    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                    <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+                    <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+                    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                </div>
+            </div>
+        </footer>
+
+
+
+    </article>
+
+    <div class="about-author clearfix">
+    {{#author}}
+        <a href="{{@blog.url}}"><img src="{{image}}" alt="{{name}}" class="avatar pull-left"></a>
+
+        <div class="details">
+            <div class="author">
+                关于作者 ：{{name}}
+            </div>
+            <div class="meta-info">
+                <span class="loaction"><i class="fa fa-home"></i>{{location}}</span>
+                <span class="website"><i class="fa fa-globe"></i><a href="{{website}}" targer="_blank">{{website}}</a></span>
+            </div>
+        </div>
+    </div>
+    {{/author}}
+
+    <div class="prev-next-wrap clearfix">
+        {{#prev_post}}
+           <a class="btn btn-default" href="{{url}}"><i class="fa fa-angle-left fa-fw"></i>{{title}}</a>
+        {{/prev_post}}
+        {{#next_post}}
+            <a class="btn btn-default"  href="{{url}}"><i class="fa fa-angle-right fa-fw"></i>{{title}}</a>
+        {{/next_post}}
+
+    </div>
+
+
+
+
+    </main>
+
+
+
+{{/post}}
+
+
+
+
+{{! The main content area on the homepage }}
+
+{{! Everything inside the #post tags pulls data from the post }}

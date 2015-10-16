@@ -1,18 +1,15 @@
-# Casper
+# CDCasper
 
-The default theme for [Ghost](http://github.com/tryghost/ghost/).
+这是Docker社区采用ghost搭建的一个博客平台，记录着docker所产生的新技术，我们致力于将docker应用到私有云
 
-To download, visit the [releases](https://github.com/TryGhost/Casper/releases) page.
+Ghost的标准模板请访问[Ghost](http://github.com/tryghost/ghost/).
 
-## Copyright & License
+如果你想下载此模板，请访问
 
-Copyright (c) 2013-2015 Ghost Foundation - Released under the MIT License.
+To download, visit the [releases](https://github.com/codog/CDCasper) 页面.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+特别说明，我们所采用的模板也来源于网络，在版权方面我们对所有人开放。
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+# 版权 & 协议
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-更新测试
+Copyright (c) 2013-2015 Ghost Foundation - Released under the [MIT license](LICENSE).

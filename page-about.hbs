@@ -1,1 +1,123 @@
-更新了about页面
+
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+{{! The big featured header }}
+
+<!-- start header -->
+
+
+
+<section class="content-wrap">
+    <div class="container">
+        <div class="row">
+            <main class="col-md-8 main-content">
+            {{! The tag below includes the post loop - partials/loop.hbs }}
+            <article class="post page">
+
+                <header class="post-head">
+                    <h1 class="post-title">关于 Docker社区 中文网</h1>
+                </header>
+
+                <section class="post-content">
+            <blockquote>
+              <p>Docker是一种基于轻量级虚拟化技术LXC开发的容器管理技术，它通过高级 API为进程单独提供了一个轻量级的虚拟环境。Docker以其方便、快捷、高效的运行方式，获得了很多公司的青睐。
+                 
+            </blockquote>
+
+            <p><img src="http://www.linuxidc.com/upload/2014_11/141128075881501.png" alt="Docker.Inc公司开源的一个基于LXC技术之上构建的Container容器引擎" /></p>
+
+            <p>   Docker是在2013年3月发布的一款PaaS产品，当时发布的是0.1版本。
+               而其产生的背景则是因为在2013年2月时，前Gluster的CEO Ben Golub和dotCloud的CEO Solomon Hykes坐在一起聊天时，
+               Solomon谈到想把dotCloud内部使用的Container容器技术单独拿出来开源，然后围绕这个技术开一家新公司提供技术支持。
+                <br />
+                Docker在2014年6月召开DockerConf2014技术大会吸引了IBM、Google、RedHat等业界知名公司的关注和技术支持，无论是从 GitHub 上的代码活跃度，还是Redhat宣布在RHEL7中正式支持Docker, 都给业界一个信号，这是一项创新型的技术解决方案。 就连 Google 公司的 Compute Engine也支持docker 在其之上运行, 国内“BAT”先锋企业百度Baidu App Engine(BAE)平台也是以Docker作为其PaaS云基础。</p>
+
+            <hr />
+
+            <p>如果你也喜欢 Docker ，可以通过以下方式与我们交流：</p>
+
+            <ul>
+            <li>微博：<a href="http://weibo.com/dockerclub">@dockerclub</a></li>
+            <li>QQ群：寻求合作中</li>
+            </ul>
+
+            <hr />
+
+            <p>合作站点：</p>
+
+            <ul>
+            <li><a href="http://www.ghostchina.com">ghost中文社区</a></li>
+            <li><a href="http://www.cnodejs.org">NodeJS中文社区</a></li>
+
+            </ul>
+
+            <p>合作伙伴：</p>
+
+            <ul>
+            <li><a href="http://www.aliyun.com/">阿里云</a></li>
+            <li><a href="http://www.qiniu.com/">七牛云存储</a></li>
+            <li><a href="http://www.dnspod.com/">DNSPOD中文站</a></li>
+
+            </ul>
+
+            <p>赞助商：</p>
+
+            <ul>
+              <!--
+            <li><a href="https://www.upyun.com/">又拍云</a></li>
+            <li><a href="http://www.ucloud.cn/">UCloud</a></li>
+            <li><a href="http://www.qiniu.com/">七牛云存储</a></li>-->
+            </ul>
+                </section>
+
+            </article>
+
+            </main>
+
+            <aside class="col-md-4 sidebar">
+                <!-- start widget -->
+                <!-- end widget -->
+                <!-- start tag cloud widget -->
+                {{> community}}
+                <!-- end tag cloud widget -->
+
+                <!-- start widget
+                 {{> download}}
+                <!-- end widget -->
+
+                <!-- start tag cloud widget -->
+                {{> tagcloudlist}}
+                <!-- end tag cloud widget -->
+
+                <!-- start widget -->
+                <!-- end widget -->
+
+                <!-- start widget -->
+                <!-- end widget -->                </aside>
+
+        </div>
+    </div>
+</section>
+<footer class="main-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+            {{> recentpost}}
+            </div>
+            <div class="col-sm-4">
+                {{> tagcloudlist}}
+            </div>
+
+            <div class="col-sm-4">
+                {{> friendlinks}}
+                </div>
+
+        </div>
+        </div>
+    </div>
+</footer>
+
+
+
+{{! The main content area on the homepage }}

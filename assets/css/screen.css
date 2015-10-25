@@ -1,12 +1,12 @@
 /*====================================================
-	Importing bootstrap less files
+    Importing bootstrap less files
 ====================================================*/
 /*====================================================
-	COLOR VARIABLE FOR THEME
+    COLOR VARIABLE FOR THEME
 ====================================================*/
 /* common */
 /*====================================================
-	common styles
+    common styles
 ====================================================*/
 html,
 body {
@@ -47,11 +47,11 @@ h6 {
     font-size: 0.75em;
 }
 a {
-    color: #e67e22;
+    color: #80bd01;
     outline: none;
 }
 a:hover {
-    color: #e67e22;
+    color: #80bd01;
 }
 a:active,
 a:focus,
@@ -63,24 +63,24 @@ a img {
     border-radius: 2px;
 }
 .btn-default {
-    border: 1px solid #e67e22;
-    background: #e67e22;
+    border: 1px solid #80bd01;
+    background: #80bd01;
     color: #ffffff;
     -webkit-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
 .btn-default:hover {
-    border: 1px solid #303030;
-    background: #303030;
+    border: 1px solid #499ef3;
+    background: #499ef3;
     color: #ffffff;
 }
 .btn-default:focus {
     outline: none;
 }
 .btn-default[disabled] {
-    border: 1px solid #303030;
-    background: #303030;
+    border: 1px solid #499ef3;
+    background: #499ef3;
     color: #ffffff;
 }
 input[type="search"],
@@ -100,11 +100,11 @@ input[type="text"]:focus,
 input[type="url"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-    border: 1px solid #e67e22;
+    border: 1px solid #80bd01;
     outline: none;
 }
 blockquote {
-    border-left: 4px solid #e67e22;
+    border-left: 4px solid #80bd01;
 }
 pre {
     padding: 0;
@@ -113,17 +113,17 @@ pre {
 }
 ::-moz-selection {
     color: #ffffff;
-    background: #e67e22;
+    background: #80bd01;
     text-shadow: none;
 }
 ::selection {
     color: #ffffff;
-    background: #e67e22;
+    background: #80bd01;
     text-shadow: none;
 }
 /* header */
 /*====================================================
-	header
+    header
 ====================================================*/
 .main-header {
     text-align: center;
@@ -171,7 +171,7 @@ pre {
     position: relative;
 }
 .main-navigation .menu li.nav-current {
-    border-bottom: 2px solid #e67e22;
+    border-bottom: 2px solid #80bd01;
     margin-bottom: -2px;
 }
 .main-navigation .menu li a {
@@ -210,7 +210,7 @@ pre {
     color: #505050;
 }
 .main-navigation .menu li ul:hover > a {
-    color: #e67e22;
+    color: #80bd01;
 }
 .main-navigation .menu li:hover ul {
     visibility: visible;
@@ -226,7 +226,7 @@ pre {
         display: block;
     }
     .main-navigation .menu li:hover > a {
-        color: #e67e22;
+        color: #80bd01;
         text-decoration: none;
     }
     .main-navigation .menu li ul {
@@ -260,6 +260,8 @@ pre {
   height: 50px;
 
 }
+
+
 @media (min-width: 768px) {
     .nav-toggle-button {
         display: none;
@@ -268,7 +270,7 @@ pre {
 
 /* post */
 /*====================================================
-	main post area
+    main post area
 ====================================================*/
 .post {
     padding: 35px;
@@ -279,7 +281,7 @@ pre {
 }
 .post .featured {
     position: absolute;
-    background: #e67e22;
+    background: #80bd01;
     color: #ffffff;
     text-align: center;
     top: -12px;
@@ -345,7 +347,7 @@ pre {
     margin-left: 7px;
 }
 .post .post-footer .tag-list a:hover {
-    color: #e67e22;
+    color: #80bd01;
 }
 /* post content */
 /*====================================================
@@ -462,7 +464,7 @@ pre {
 }
 .post-content blockquote {
     margin: 0 0 1.64em 0;
-    border-left: 3px solid #e67e22;
+    border-left: 3px solid #80bd01;
     padding-left: 12px;
     color: #666664;
 }
@@ -606,7 +608,7 @@ pre {
 }
 /* pagination */
 /*====================================================
-	pagination
+    pagination
 ====================================================*/
 .pagination {
     margin: 0 0 35px;
@@ -617,7 +619,7 @@ pre {
     text-align: center;
     display: inline-block;
     color: #ffffff;
-    background: #e67e22;
+    background: #80bd01;
     border-radius: 2px;
 }
 .pagination a a:hover {
@@ -631,7 +633,7 @@ pre {
     line-height: 36px;
 }
 .pagination .page-number {
-    background: #e67e22;
+    background: #80bd01;
     color: #ffffff;
     margin: 0 3px;
     display: inline-block;
@@ -641,7 +643,7 @@ pre {
 }
 /* author */
 /*====================================================
-	about author and comment
+    about author and comment
 ====================================================*/
 .about-author {
     background: #ffffff;
@@ -686,7 +688,7 @@ pre {
 }
 /* sidebar */
 /*====================================================
-	sidebar
+    sidebar
 ====================================================*/
 .sidebar .widget {
     background: #ffffff;
@@ -709,7 +711,7 @@ pre {
     content: "";
     width: 90px;
     height: 1px;
-    background: #e67e22;
+    background: #80bd01;
     position: absolute;
     left: 0;
     bottom: -1px;
@@ -729,7 +731,7 @@ pre {
     transition: all 0.2s ease;
 }
 .widget .recent-post .recent-single-post .post-title:hover {
-    color: #e67e22;
+    color: #80bd01;
     text-decoration: none;
 }
 .widget .recent-post .recent-single-post .date {
@@ -748,8 +750,8 @@ pre {
 }
 .widget .tag-cloud a:hover {
     color: #ffffff;
-    background: #e67e22;
-    border: 1px solid #e67e22;
+    background: #80bd01;
+    border: 1px solid #80bd01;
     text-decoration: none;
 }
 .widget .social {
@@ -773,8 +775,8 @@ pre {
 }
 .widget .social li:hover i {
     color: #ffffff;
-    background: #e67e22;
-    border: 1px solid #e67e22;
+    background: #80bd01;
+    border: 1px solid #80bd01;
 }
 .widget .newsletter .input-group {
     margin-bottom: 10px;
@@ -792,7 +794,7 @@ pre {
 }
 /* cover*/
 /*====================================================
-	Tag page & author page cover
+    Tag page & author page cover
 ====================================================*/
 .cover {
     text-align: center;
@@ -826,22 +828,22 @@ pre {
 }
 /* footer */
 /*====================================================
-	footer
+    footer
 ====================================================*/
 .main-footer {
-    background: #202020;
+    background: #ffffff;
     padding: 35px 0 0;
     color: #959595;
 }
 .main-footer .widget .title {
-    color: #ffffff;
-    border-bottom: 1px solid #303030;
+    color: #555555;
+    border-bottom: 1px solid #ebebeb;
 }
 .main-footer .widget .tag-cloud a {
-    border: 1px solid #303030;
+    border: 1px solid #ebebeb;
 }
 .main-footer .widget .tag-cloud a:hover {
-    border: 1px solid #e67e22;
+    border: 1px solid #80bd01;
 }
 .main-footer .widget .friend-links a {
     border: none;
@@ -851,28 +853,28 @@ pre {
 }
 .main-footer .widget .friend-links hr {
     margin: 1em 0;
-    border-top: 1px dashed #303030;
+    border-top: 1px dashed #ebebeb;
 }
 .main-footer .widget .recent-post .recent-single-post {
-    border-bottom: 1px dashed #303030;
+    border-bottom: 1px dashed #ebebeb;
 }
 .main-footer .widget .recent-post .recent-single-post .post-title {
     color: #959595;
 }
 .main-footer .widget .recent-post .recent-single-post .post-title:hover {
-    color: #e67e22;
+    color: #80bd01;
 }
 .main-footer .widget .recent-post .recent-single-post .date {
     color: #505050;
 }
 .copyright {
-    background: #111;
+    background: #ffffff;
     font-size: 13px;
     text-align: center;
     color: #555555;
     padding-top: 28px;
     padding-bottom: 28px;
-    border-top: 1px solid #303030;
+    border-top: 1px solid #e1e1e1;
 }
 .copyright span {
     margin: 0 .5em;
@@ -884,7 +886,7 @@ pre {
     position: fixed;
     right: 10px;
     bottom: 10px;
-    background: rgba(230, 126, 34, 0.6);
+    background: #80bd01;
     color: #ffffff;
     text-align: center;
     border-radius: 2px;
@@ -892,7 +894,7 @@ pre {
     display: none;
 }
 #back-to-top:hover {
-    background: #e67e22;
+    background: #499ef3;
 }
 #back-to-top i {
     width: 30px;

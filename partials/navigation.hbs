@@ -2,16 +2,26 @@
 
 <!-- start navigation -->
 <nav class="main-navigation">
+
     <div class="container">
+
         <div class="row">
+
             <div class="col-sm-12">
+
                 <div class="navbar-header">
+                  <a  class="navbar-brand" href='{{@blog.url}}'>  <img alt="Brand" src="{{@blog.logo}}">
+                      </a>
+
                         <span class="nav-toggle-button collapsed" data-toggle="collapse" data-target="#main-menu">
                         <span class="sr-only">Toggle navigation</span>
                         <i class="fa fa-bars"></i>
                         </span>
                 </div>
+
+
                 <div class="collapse navbar-collapse" id="main-menu">
+
                     <ul class="menu">
 
                         {{#foreach navigation}}
@@ -32,4 +42,3 @@
     </div>
 </nav>
 <!-- end navigation -->
-
